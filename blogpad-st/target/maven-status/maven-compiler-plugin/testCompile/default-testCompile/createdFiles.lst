@@ -1,0 +1,4 @@
+airhacks\blogpad\metrics\boundary\MetricsResourceClient.class
+airhacks\blogpad\posts\boundary\PostResourceIT.class
+airhacks\blogpad\metrics\boundary\MetricsResourceIT.class
+airhacks\blogpad\posts\boundary\PostResourceClient.class
