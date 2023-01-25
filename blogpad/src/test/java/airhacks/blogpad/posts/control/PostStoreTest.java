@@ -19,6 +19,7 @@ public class PostStoreTest {
         this.cut = new PostsStore();
         this.cut.storageDir = "target";
         this.cut.init();
+        System.out.println("!!Create cut");
     }
 
     @Test
@@ -42,7 +43,8 @@ public class PostStoreTest {
         String title = "first";
         String content = "hey duke";
         Post expected = new Post(title, content);
-        this.cut.save(expected);
+        System.out.println("!!Create wit cut: " + this.cut.getClass());
+        this.cut.createNew(expected);
         Post actual = this.cut.read(title);
         assertEquals(expected.title, actual.title);
         assertEquals(expected.content, actual.content);

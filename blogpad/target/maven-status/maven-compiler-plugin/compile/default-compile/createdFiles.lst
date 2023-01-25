@@ -1,6 +1,9 @@
 airhacks\service\JAXRSConfiguration.class
 airhacks\blogpad\posts\entity\Post.class
+airhacks\blogpad\readiness\boundary\ReadinessCheck.class
 airhacks\service\ping\boundary\PingResource.class
+airhacks\blogpad\posts\control\Initialzer.class
 airhacks\blogpad\posts\control\PostsStore.class
 airhacks\blogpad\posts\control\StorageException.class
 airhacks\blogpad\posts\boundary\PostsResource.class
+airhacks\blogpad\posts\control\TitleNormalizer.class

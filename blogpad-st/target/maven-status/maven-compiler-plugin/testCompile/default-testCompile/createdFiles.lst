@@ -1,4 +1,7 @@
-airhacks\blogpad\metrics\boundary\MetricsResourceClient.class
+airhacks\blogpad\health\boundary\HealthResourceIT.class
+airhacks\blogpad\posts\boundary\PostsResourceTortureIT.class
 airhacks\blogpad\posts\boundary\PostResourceIT.class
 airhacks\blogpad\metrics\boundary\MetricsResourceIT.class
+airhacks\blogpad\health\boundary\HealthResourceClient.class
+airhacks\blogpad\metrics\boundary\MetricsResourceClient.class
 airhacks\blogpad\posts\boundary\PostResourceClient.class

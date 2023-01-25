@@ -7,8 +7,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.net.URI;
 
 import org.eclipse.microprofile.rest.client.RestClientBuilder;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import airhacks.blogpad.posts.boundary.PostResourceIT;
 
 /**
  *
@@ -17,6 +20,13 @@ import org.junit.jupiter.api.Test;
 public class MetricsResourceIT {
 
     private MetricsResourceClient client;
+
+    @BeforeAll
+    public static void initMetricsWithBusinessCall() {
+        var test = new PostResourceIT();
+        test.init();
+        test.createNew();
+    }
 
     @BeforeEach
     public void init() {
@@ -41,7 +51,7 @@ public class MetricsResourceIT {
         var applicationMetrics = this.client.applicationMetrics();
         assertNotNull(applicationMetrics);
         assertFalse(applicationMetrics.isEmpty());
-        int saveInvocationCounter = applicationMetrics.getJsonNumber("airhacks.blogpad.posts.boundary.PostsResource.save").intValue();
+        int saveInvocationCounter = applicationMetrics.getJsonNumber("airhacks.blogpad.posts.boundary.PostsResource.createNew").intValue();
         assertTrue(saveInvocationCounter > 0);
     }
     
