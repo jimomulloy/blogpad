@@ -1,9 +1,0 @@
-D:\ab\blogpad\blogpad\src\main\java\airhacks\service\JAXRSConfiguration.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\service\ping\boundary\PingResource.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\posts\boundary\PostsResource.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\posts\control\TitleNormalizer.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\posts\control\PostsStore.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\readiness\boundary\ReadinessCheck.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\posts\control\Initialzer.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\posts\entity\Post.java
-D:\ab\blogpad\blogpad\src\main\java\airhacks\blogpad\posts\control\StorageException.java
