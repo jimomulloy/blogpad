@@ -14,6 +14,7 @@ public class PostsResource {
     Reactor reactor;
 
     @GET
+    // TODO @Traced
     @Path("{title}")
     @Produces(MediaType.TEXT_HTML)
     public String findPost(@PathParam("title") String title) {

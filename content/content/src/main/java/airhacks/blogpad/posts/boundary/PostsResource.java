@@ -55,6 +55,7 @@ public class PostsResource {
  
     @Timed
     @GET
+    // TODO @Traced
     @Path("{title}")
     @Produces(MediaType.APPLICATION_JSON)
     public Post find(@PathParam("title") String title) {
